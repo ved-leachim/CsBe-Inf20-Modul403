@@ -1,1 +1,0 @@
-# Hier werden die Code-Dateien zu Block 7 hochgeladen.
