@@ -20,6 +20,7 @@ public class Main {
         topHunters[4] = hunter5;
 
         System.out.println(getPersonsFullName(hunter1));
+        System.out.println("Der Hunter ist " + getHuntersAge(hunter1) + " Jahre alt.");
         printAllTopHunters(topHunters);
         System.out.println("Zufällig ausgewählt wurde: " + pickRandomHunter(topHunters));
     }
@@ -40,4 +41,9 @@ public class Main {
     static String pickRandomHunter(Hunter... hunter){
         return hunter[randomizer.nextInt(5)].getFirstName();
     }
+
+    static int getHuntersAge(Hunter hunter){
+        return hunter.getAge();
+    }
+
 }
