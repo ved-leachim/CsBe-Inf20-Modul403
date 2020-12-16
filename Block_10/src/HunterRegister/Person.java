@@ -1,4 +1,4 @@
-package Main;
+package HunterRegister;
 
 public class Person {
     private String firstName;
@@ -23,4 +23,17 @@ public class Person {
     public void setStreet(String street) {this.street = street;}
     public void setCity(String city) {this.city = city;}
     public void setPLZ(int PLZ) {this.PLZ = PLZ;}
+    public Person(String firstName,String lastName, int age,String city, int PLZ,String street)
+    {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setAge(age);
+        setPLZ(PLZ);
+        setStreet(street);
+    }
+    public Person()
+    {
+
+    }
+
 }
