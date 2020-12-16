@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="68484e3a-eb3a-42f7-ae78-7598dce9297d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Mike_Thurm_modul403/main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\student\Desktop\Projektarbeit_Modul_403\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kmnX1tgP5ylwzO4oJktkAuywCj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="benutzereingabe.Main" />
+      <module name="Projektarbeit_Modul_403" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="random" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="benutzereingabe.random" />
+      <module name="Projektarbeit_Modul_403" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="benutzereingabe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.random" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68484e3a-eb3a-42f7-ae78-7598dce9297d" name="Default Changelist" comment="" />
+      <created>1606314669763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606314669763</updated>
+      <workItem from="1606314671154" duration="36000" />
+      <workItem from="1606314729310" duration="1778000" />
+      <workItem from="1606316549217" duration="403000" />
+      <workItem from="1606326155222" duration="1720000" />
+      <workItem from="1606327934134" duration="1484000" />
+      <workItem from="1606330886091" duration="203000" />
+      <workItem from="1606375402789" duration="1739000" />
+      <workItem from="1606377214860" duration="1218000" />
+      <workItem from="1606396567800" duration="15000" />
+      <workItem from="1606397502412" duration="131000" />
+      <workItem from="1606406705777" duration="1748000" />
+      <workItem from="1606408530097" duration="243000" />
+      <workItem from="1606551120608" duration="1742000" />
+      <workItem from="1606552929636" duration="1867000" />
+      <workItem from="1606555032007" duration="869000" />
+      <workItem from="1606561224138" duration="1294000" />
+      <workItem from="1606568786117" duration="1760000" />
+      <workItem from="1606570607369" duration="1761000" />
+      <workItem from="1606572423554" duration="1333000" />
+      <workItem from="1606584097522" duration="385000" />
+      <workItem from="1606747995467" duration="433000" />
+      <workItem from="1606748941103" duration="187000" />
+      <workItem from="1606913528972" duration="1742000" />
+      <workItem from="1606915342430" duration="1751000" />
+      <workItem from="1606917162517" duration="1756000" />
+      <workItem from="1606918979808" duration="1755000" />
+      <workItem from="1606920788214" duration="1756000" />
+      <workItem from="1606922619840" duration="1060000" />
+      <workItem from="1606924592016" duration="1746000" />
+      <workItem from="1606926434905" duration="293000" />
+      <workItem from="1606981078825" duration="1741000" />
+      <workItem from="1606982900687" duration="1743000" />
+      <workItem from="1606984698036" duration="1756000" />
+      <workItem from="1606986507654" duration="1758000" />
+      <workItem from="1606988325805" duration="503000" />
+      <workItem from="1607016620731" duration="1745000" />
+      <workItem from="1607018433370" duration="1749000" />
+      <workItem from="1607020233490" duration="877000" />
+      <workItem from="1607079387884" duration="148000" />
+      <workItem from="1607169915745" duration="260000" />
+      <workItem from="1607515780337" duration="1742000" />
+      <workItem from="1607517613713" duration="794000" />
+      <workItem from="1607518455470" duration="1864000" />
+      <workItem from="1607520363537" duration="1773000" />
+      <workItem from="1607522180491" duration="581000" />
+      <workItem from="1607723340291" duration="300000" />
+      <workItem from="1608101322116" duration="911000" />
+      <workItem from="1608122002881" duration="1211000" />
+      <workItem from="1608124034833" duration="812000" />
+    </task>
+    <task id="LOCAL-00001" summary="ProjektArbeit">
+      <created>1607524054398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607524054398</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ProjektArbeit">
+      <created>1607524077559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607524077559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ProjektArbeit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ProjektArbeit" />
+  </component>
+</project>
