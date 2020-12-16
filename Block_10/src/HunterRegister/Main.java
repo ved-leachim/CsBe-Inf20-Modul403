@@ -1,5 +1,4 @@
 package HunterRegister;
-import HunterRegister.Person;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -9,11 +8,10 @@ public class Main {
 
     static Scanner console = new Scanner(System.in);
     static int personCounter = 0;
-    static int stupidcounter =0;
     static boolean quit = false;
 
     static  void Logo()throws InterruptedException {
-    String b = "`````````````````````````            ``````````````````````````           ``````````````````````````\n" +
+    String logo = "`````````````````````````            ``````````````````````````           ``````````````````````````\n" +
             "-ymmmmmmmmmmmmmmmmmmmmmmm`           dNNNNNNNNNNNNNNNNNNNNNNNNy           -mNNNNNNNNNNNNNNNNNNNNNmh:\n" +
             " `..----..--hMs-.......-.            --:mMMMMMMMMNNMMMMMMMMm:-.           `----------hMy----------` \n" +
             "            `yN+                      .dMMMMMMMMNhhNMMMMMMMMh`                     `yMs`            \n" +
@@ -47,15 +45,16 @@ public class Main {
             "/hmmmmmmmmmmmmmmmmmmmmmmm`           hmmmmmmmmmmmmmmmmmmmmmmmms           -mmmmmmmmmmmmmmmmmmmmmmmh:\n" +
             "`````````````````````````            ``````````````````````````            ````````````````````````` ";
         Boolean BlueWitheSwitch = true;
-        for (int i = 0; i < b.length(); i++) {
+
+        for (int i = 0; i < logo.length(); i++) {
             if(BlueWitheSwitch == true)
             {
-            System.out.print("\u001B[37m"+b.charAt(i));
+            System.out.print("\u001B[37m"+logo.charAt(i));
             BlueWitheSwitch = false;
             }
             else
             {
-            System.out.print("\u001B[36m"+b.charAt(i));
+            System.out.print("\u001B[36m"+logo.charAt(i));
             BlueWitheSwitch = true;
             }
             Thread.sleep(3);
@@ -72,8 +71,8 @@ public class Main {
                 "1 erstellt eine person \n"+
                 "2 alle benutzer ausgeben \n" +
                 "3 alle inhalte im array löschen \n"+
-                "4 Das Program Beenden \n"+
-                "5 Generate 5 legendary users" );
+                "4 Generate 5 legendary users\n"+
+                "5 Das Program Beenden");
    }
     public static void main(String[] args ) throws IOException, InterruptedException
     {
@@ -106,21 +105,22 @@ public class Main {
                  break;
 
                  case 2:
-                     allUsers();
+                     AllUsers();
                  break;
 
                  case 3:
-                     clearalldata();
+                     ClearAllData();
                  break;
 
                 case 4:
-                    quit = true;
-                    Endingfail();
-                    System.out.println("Wir wünschen ihnen noch einen schönen tag!");
+                    CreateInitialUsers();
+
                 break;
 
                 case 5:
-                    CreateInitialUsers();
+                    quit = true;
+
+                    System.out.println("Wir wünschen ihnen noch einen schönen tag!");
                 break;
             }
         }
@@ -140,9 +140,9 @@ public class Main {
             System.out.println("To many existing users cannot add 5 more");
             return;
         }
-        for (stupidcounter =0; stupidcounter < firstname.length; stupidcounter++)
+        for (int i =0; i < firstname.length; i++)
         {
-            hunters[stupidcounter +personCounter] = new Person(firstname[stupidcounter], lastname[stupidcounter], age[stupidcounter], city[stupidcounter], plz[stupidcounter], street[stupidcounter]);
+            hunters[i +personCounter] = new Person(firstname[i], lastname[i], age[i], city[i], plz[i], street[i]);
 
         }
         personCounter+=firstname.length;
@@ -152,11 +152,11 @@ public class Main {
     static void CreatePerson()
     {
          Person person = new Person();
-         System.out.println("bitte geben sie ihren Vornamen an");
+         System.out.print("bitte geben sie ihren Vornamen an:");
          person.setFirstName(console.nextLine());
-         System.out.println("bitte geben sie ihren Nachname an");
+         System.out.print("bitte geben sie ihren Nachname an:");
          person.setLastName(console.nextLine());
-         System.out.println("bitte geben sie ihr Alter an");
+         System.out.print("bitte geben sie ihr Alter an:");
          while (true)
          {
              try
@@ -166,13 +166,13 @@ public class Main {
              }
              catch (Exception e)
              {
-                 System.out.println("put your age in");
+                 System.out.print("Geben sie ein gültiges alter an:");
              }
          }
          if (person.getAge() >= 16) {
-            System.out.println("bitte geben sie ihre Stadt an in der sie Wohnen");
+            System.out.print("bitte geben sie ihre Stadt an in der sie Wohnen:");
             person.setCity(console.nextLine());
-            System.out.println("bitte geben sie ihre PLZ an");
+            System.out.print("bitte geben sie ihre PLZ an:");
                 while (true)
                 {
                     try
@@ -185,17 +185,14 @@ public class Main {
                         System.out.println("\u001B[31m" + "Hunter müssen zählen können");
                     }
                 }
-            System.out.println("bitte geben sie ihre wohn strasse an");
+            System.out.print("bitte geben sie ihre wohn strasse an:");
             person.setStreet(console.nextLine());
          }
-         System.out.println(person.getFirstName() + "Ihre Registration");
          hunters[personCounter] = person;
          personCounter++;
-
-
     }
 
-    static void allUsers()
+    static void AllUsers()
     {
        for (int i =0; i < personCounter; i++)
         {
@@ -206,19 +203,15 @@ public class Main {
 
             );
         }
-        stupidcounter = 0;
+
     }
-    static void clearalldata()
+
+    static void ClearAllData()
     {
         hunters =  new Person[hunters.length];
         personCounter = 0 ;
-        stupidcounter = 0 ;
+
     }
-    static void Endingfail()
-    {
-            if (quit == false)
-            {
-                System.out.println("Fuck this, this should never happens");
-            }
-    }
+
+
 }
