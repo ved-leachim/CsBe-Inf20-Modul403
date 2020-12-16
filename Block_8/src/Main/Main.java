@@ -14,7 +14,7 @@ public class Main {
     static int i =0;
     static boolean quit = false;
 
-static  void Logo()throws InterruptedException {
+    static  void Logo()throws InterruptedException {
     String b = "`````````````````````````            ``````````````````````````           ``````````````````````````\n" +
             "-ymmmmmmmmmmmmmmmmmmmmmmm`           dNNNNNNNNNNNNNNNNNNNNNNNNy           -mNNNNNNNNNNNNNNNNNNNNNmh:\n" +
             " `..----..--hMs-.......-.            --:mMMMMMMMMNNMMMMMMMMm:-.           `----------hMy----------` \n" +
@@ -48,41 +48,39 @@ static  void Logo()throws InterruptedException {
             " .:::::::/mMMMMMMMMh:----`           .----/NMdhhhhhhhhdMN+::::.           `----:dMMMMMMMMm:-------` \n" +
             "/hmmmmmmmmmmmmmmmmmmmmmmm`           hmmmmmmmmmmmmmmmmmmmmmmmms           -mmmmmmmmmmmmmmmmmmmmmmmh:\n" +
             "`````````````````````````            ``````````````````````````            ````````````````````````` ";
-    Boolean Blackgreen = true;
-    for (int i = 0; i < b.length(); i++) {
-
-
-
-    if(Blackgreen == true)
-        {
-        System.out.print("\u001B[37m"+b.charAt(i));
-        Blackgreen = false;
+        Boolean Blackgreen = true;
+        for (int i = 0; i < b.length(); i++) {
+            if(Blackgreen == true)
+            {
+            System.out.print("\u001B[37m"+b.charAt(i));
+            Blackgreen = false;
+            }
+            else
+            {
+            System.out.print("\u001B[36m"+b.charAt(i));
+            Blackgreen = true;
+            }
+            Thread.sleep(3);
         }
-    else
-        {
-        System.out.print("\u001B[36m"+b.charAt(i));
-        Blackgreen = true;
-        }
-        Thread.sleep(3);
     }
-}
-   static void  Title() throws InterruptedException {
-
-        String c = "\n seien sie bereit in der asdasdasd beitutrerten";
-        for(int l = 0; l < c.length(); l++){
+   static void  Title() throws InterruptedException
+   {
+       String c = "\n Wilkommen bei der hunter Prüfung bitte tragen sie sich ein!";
+       for(int l = 0; l < c.length(); l++)
+           {
             System.out.print("\u001B[33m" + c.charAt(l));
-            Thread.sleep(220);}
+            Thread.sleep(220);
+           }
+   }
+
+
+    static void Info()
+    {
+        System.out.println("\u001B[31m" + " \n gebn sie eine zahle zwischen 1-5 ein \n 1 erstellt eine person \n 2 alle benutzer ausgeben " +
+        " \n 3 Clear screen in bearbeitung \n 4 alle inhalte im array löschen \n 5 Schliesst das Program" );
     }
-static void paint(Graphics g) {
-}
-
-    static void Info(){
-
-    System.out.println("\u001B[31m" + " \n gebn sie eine zahle zwischen 1-5 ein \n 1 erstellt eine person \n 2 Noch nicht erledigt (alle benutzer ausgeben) " +
-                       " \n 3 Noch nicht erledigt \n 4 Noch nicht erledigt (alle inhalte im array löschen) \n 5 Schliesst das Program" );
-    }
-    public static void main(String[] args ) throws IOException, InterruptedException{
-
+    public static void main(String[] args ) throws IOException, InterruptedException
+    {
       //  Logo();
       //  Title();
         Top5();
@@ -104,29 +102,26 @@ static void paint(Graphics g) {
                 }
                 catch (Exception e)
                 {
-                    System.out.println("\u001B[31m" + "Fuck you this is not a valued number for me");
+                    System.out.println("\u001B[31m" + "this is not a valued number for me try again");
                 }
             }
             switch (inputnumber) {
-                case 1:
-
+                 case 1:
                     createPerson();
                  break;
 
                  case 2:
-
                      allUsers();
                  break;
 
                  case 3:
-                     Cls();
+
                  break;
 
                  case 4:
-
                      clearalldata();
                      Top5();
-                break;
+                 break;
 
                 case 5:
                 quit = true;
@@ -135,21 +130,23 @@ static void paint(Graphics g) {
             }
         }
     }
-    static void Cls() throws IOException, InterruptedException {
+   /* static void Cls() throws IOException, InterruptedException {
 
         System.out.print("\033[H\033[2J");
         System.out.flush();  }
+    */
 
 
-
-    static void Top5(){
-   Killua();
-   Gon();
-   Kurapika();
-   Leorio();
-   Hisoka();
-       }
-    static void Killua() {
+    static void Top5()
+    {
+        Killua();
+        Gon();
+        Kurapika();
+        Leorio();
+        Hisoka();
+    }
+    static void Killua()
+    {
         Person a = new Person();
         a.setFirstName("Killua");
         a.setLastName("Zoldyck");
@@ -159,8 +156,9 @@ static void paint(Graphics g) {
         a.getAge();
         hunters[Personcounter] = a;
         Personcounter++;
-         }
-    static void Gon() {
+    }
+    static void Gon()
+    {
         Person a = new Person();
         a.setFirstName("Gon");
         a.setLastName("Freecss");
@@ -169,10 +167,8 @@ static void paint(Graphics g) {
         a.getFirstName();
         a.getLastName();
         a.getAge();
-
         hunters[Personcounter] = a;
         Personcounter++;
-
     }
     static void Kurapika()
     {
@@ -187,7 +183,6 @@ static void paint(Graphics g) {
         a.getCity();
         hunters[Personcounter] = a;
         Personcounter++;
-
     }
     static void Leorio()
     {
@@ -195,13 +190,11 @@ static void paint(Graphics g) {
         a.setFirstName("Leorio");
         a.setLastName("Raradinight");
         a.setAge(21);
-
         a.getFirstName();
         a.getLastName();
         a.getAge();
         hunters[Personcounter] = a;
         Personcounter++;
-
     }
     static void Hisoka()
     {
@@ -209,19 +202,17 @@ static void paint(Graphics g) {
         a.setFirstName("Hisoka");
         a.setLastName("Morow");
         a.setAge(22);
-
         a.getFirstName();
         a.getLastName();
         a.getAge();
         hunters[Personcounter] = a;
         Personcounter++;
-
     }
     static void createPerson ()
     {
          Person a = new Person();
-        System.out.println("bitte geben sie ihren Vornamen an");
-        a.setFirstName(name.nextLine());
+         System.out.println("bitte geben sie ihren Vornamen an");
+         a.setFirstName(name.nextLine());
          System.out.println("bitte geben sie ihren Nachname an");
          a.setLastName(name.nextLine());
          System.out.println("bitte geben sie ihr Alter an");
@@ -234,7 +225,7 @@ static void paint(Graphics g) {
              }
              catch (Exception e)
              {
-                 System.out.println("Fuck you this is not a valued number for me");
+                 System.out.println("put your age in");
              }
          }
         if (a.getAge() > 16) {
@@ -250,17 +241,15 @@ static void paint(Graphics g) {
                     }
                     catch (Exception e)
                     {
-                        System.out.println("\u001B[31m" + "Fuck you this is not a valued number for me");
+                        System.out.println("\u001B[31m" + "Hunter müssen zählen können");
                     }
                 }
-                System.out.println("bitte geben sie ihre wohn strasse  an");
-                a.setStreet(name.nextLine());
-
+            System.out.println("bitte geben sie ihre wohn strasse  an");
+            a.setStreet(name.nextLine());
         }
-        System.out.println(a.getFirstName() + " das ist ihr name");
+        System.out.println(a.getFirstName() + "Ihre Registration");
         hunters[Personcounter] = a;
          Personcounter++;
-         ;
          //Output();
     }
   /*  static void Output()
@@ -271,19 +260,24 @@ static void paint(Graphics g) {
         }
     }*/
         static void allUsers()
-    {
-        for (; i <Personcounter; i++)
         {
-            System.out.println(hunters[i].getFirstName() + " " + hunters[i].getLastName() + " " + hunters[i].getAge() + " " + hunters[i].getCity() + " " + hunters[i].getPLZ() + " " + hunters[i].getStreet());
+        for (; i <Personcounter; i++)
+            {
+                System.out.println(hunters[i].getFirstName() + " " + hunters[i].getLastName() + " " + hunters[i].getAge() + " " + hunters[i].getCity() + " " + hunters[i].getPLZ() + " " + hunters[i].getStreet());
+            }
+            i = 0;
         }
-       i = 0;
-
-    }
     static void clearalldata()
     {
         hunters =  new Person[hunters.length];
         Personcounter = 0 ;
         i = 0 ;
     }
-    static void Endingfail(){if(quit == false)    {System.out.println("Fuck this, this should never happens");}}
+        static void Endingfail()
+        {
+            if (quit == false)
+            {
+                System.out.println("Fuck this, this should never happens");
+            }
+        }
 }
