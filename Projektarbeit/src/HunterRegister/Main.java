@@ -66,13 +66,13 @@ public class Main {
    }
    static void Info()
    {
-        System.out.println("\u001B[31m\n" +
-                "geben sie eine zahle zwischen 1-5 ein \n"+
+        System.out.print("\u001B[31m\n" +
                 "1 erstellt eine person \n"+
                 "2 alle benutzer ausgeben \n" +
                 "3 alle inhalte im array löschen \n"+
                 "4 Generate 5 legendary users\n"+
-                "5 Das Program Beenden");
+                "5 Das Program Beenden \n"+
+                "geben sie eine zahle zwischen 1-5 ein:");
    }
     public static void main(String[] args ) throws IOException, InterruptedException
     {
@@ -137,7 +137,7 @@ public class Main {
 
         if(personCounter >10)
         {
-            System.out.println("To many existing users cannot add 5 more");
+            System.out.println("es sind zu viele benutzer registiert sie können diese action nicht ausführen");
             return;
         }
         for (int i =0; i < firstname.length; i++)
@@ -150,7 +150,11 @@ public class Main {
     }
 
     static void CreatePerson()
-    {
+    {   if(personCounter >14)
+        {
+            System.out.println("es sind zu viele benutzer registiert sie können diese action nicht ausführen");
+            return;
+        }
          Person person = new Person();
          System.out.print("bitte geben sie ihren Vornamen an:");
          person.setFirstName(console.nextLine());
@@ -190,6 +194,7 @@ public class Main {
          }
          hunters[personCounter] = person;
          personCounter++;
+
     }
 
     static void AllUsers()
